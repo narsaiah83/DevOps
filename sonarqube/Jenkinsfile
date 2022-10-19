@@ -27,7 +27,7 @@ pipeline{
         }
 }
     stage('Deploy Artifacts to Nexus') {
-        nexusArtifactUploader artifacts: }
+        nexusArtifactUploader artifacts 
             
         { artifactId: 'springboot', 
         classifier: '',
