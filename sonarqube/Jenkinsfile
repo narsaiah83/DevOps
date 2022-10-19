@@ -38,9 +38,7 @@ pipeline{
         repository: 'mvn-repo', 
         version: '1.0.0'  
         }
-        
-   
         }
        
     
-}
+
