@@ -29,7 +29,7 @@ pipeline{
     stage('Deploy Artifacts to Nexus') {
         nexusArtifactUploader artifacts 
             
-        { artifactId: 'springboot', 
+        artifactId: 'springboot', 
         classifier: '',
         file: 'maven-central-repo/Uber.jar',
         type: 'jar']], 
