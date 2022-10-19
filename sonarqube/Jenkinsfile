@@ -14,6 +14,7 @@ pipeline{
                 sh 'mvn clean package'
             }
          }
+    }
         stage('SonarQube analysis') {
 //    def scannerHome = tool 'SonarScanner 4.0';
         steps{
@@ -35,7 +36,8 @@ pipeline{
         nexusVersion: 'nexus2', 
         protocol: 'http', 
         repository: 'mvn-repo', 
-        version: '1.0.0'   
+        version: '1.0.0'  
+        }
         
    
         }
