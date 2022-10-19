@@ -30,7 +30,7 @@ pipeline{
         nexusArtifactUploader artifacts:
             
             artifactId 'springboot' }
-        classifier: '..',
+        classifier 
         file: 'maven-central-repo/Uber.jar',
         type: 'jar']], 
         credentialsId: 'admin123',
