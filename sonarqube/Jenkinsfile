@@ -24,6 +24,7 @@ pipeline{
         sh "mvn sonar:sonar"
     }
         }
+        }
         stage('Deploy Artifacts to Nexus')
         nexusArtifactUploader artifacts: [
         [artifactId: 'springboot', 
