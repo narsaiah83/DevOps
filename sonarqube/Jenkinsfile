@@ -31,8 +31,8 @@ pipeline{
             
             artifactId 'springboot' }
         classifier 
-        file: maven-central-repo/Uber.jar,
-        type: jar]], 
+        file: maven-central-repo/Uber.jar
+type: jar }}
         credentialsId: admin123,
         groupId: 'com.example', 
         nexusUrl: '54.234.166.21:8081/', 
