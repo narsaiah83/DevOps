@@ -40,6 +40,5 @@ credentialsId: {admin123}
         protocol: 'http'
         repository: 'mvn-repo' 
         version: '1.0.0'
-            }
         }
    }
